@@ -1,0 +1,92 @@
+.page {
+    height: 92vh;
+}
+
+.container {
+    width: auto;
+    margin: 3%;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.style-background {
+    position: absolute;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 37%, 42% 23%);
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 80%;
+    background: #017143;
+    z-index: 2;
+}
+
+.style-background2 {
+    position: absolute;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 37%, 42% 23%);
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background: #5b9f83;
+    border-radius: 0px 0px 0px 40px;
+}
+
+.flex {
+    display: flex;
+    flex: 1 1 100px;
+
+}
+
+.navbar {
+    background: #cec9c9;
+    width: 20%;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.portImg {
+    width: 10%;
+    border: 5px solid #017143;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.project-list {
+    width: 50%;
+    height: 100%;
+
+}
+
+.bio-list {
+    flex-direction: row;
+}
+
+.carousel img {
+    object-fit: cover !important;
+}
+
+h1 span {
+    color: #017143;
+}
+
+.style-background3 {
+    position: absolute;
+    clip-path: polygon(0 92%, 0% 100%, 13% 100%);
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    bottom: 0%;
+    background: #017143;
+    z-index: 2;
+}
+
+.style-background4 {
+    position: absolute;
+    clip-path: polygon(0 90%, 0 100%, 13% 100%);
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    bottom: 0%;
+    background: #5b9f83;
+    z-index: 1;
+}
