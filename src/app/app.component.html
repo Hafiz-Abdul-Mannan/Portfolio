@@ -1,41 +1,117 @@
-<div class="page">
-  <div class="style-background">
+<header>
+  <div class="logo">
+    <img src="" alt="">
   </div>
-  <div class="style-background2">
+  <button class="nav-toggle" aria-label="toggle-navigation">
+    <span class="hamburger">
+
+    </span>
+  </button>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="#services" class="nav-link">My Services</a></li>
+      <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+      <li class="nav-item"><a href="#work" class="nav-link">My Work</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- ---------------------------------------- -->
+<section class="intro" id="home">
+  <h1 class="section-title section-title-intro">
+    Hi, I am <strong>Hafiz Abdul Mannan</strong>
+  </h1>
+  <p class="section-subtitle section-subtitle-intro">
+    Front-end Developer
+  </p>
+  <img src="../assets/images/A.6034.17.jpg" alt="" class="intro-img">
+</section>
+<section class="my-services" id="services">
+  <h2 class="section-title section-title-services">
+    What I do
+  </h2>
+  <div class="services">
+    <div class="service">
+      <h3>
+        Design + Development
+      </h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores officia at, magnam, non necessitatibus,
+        blanditiis illum laboriosam autem repudiandae quis recusandae exercitationem placeat quia vitae aliquam possimus
+        amet pariatur sint.</p>
+    </div>
+    <div class="service">
+      <h3>
+        E-commerce
+      </h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores officia at, magnam, non necessitatibus,
+        blanditiis illum laboriosam autem repudiandae quis recusandae exercitationem placeat quia vitae aliquam possimus
+        amet pariatur sint.</p>
+    </div>
+    <div class="service">
+      <h3>
+        Word Press
+      </h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores officia at, magnam, non necessitatibus,
+        blanditiis illum laboriosam autem repudiandae quis recusandae exercitationem placeat quia vitae aliquam possimus
+        amet pariatur sint.</p>
+    </div>
   </div>
-  <div class="container flex">
-    <div class="navbar">
-      Home
-    </div>
-    <div class="flex" style="flex-direction: row; justify-content: space-between;">
-      <img class="portImg" src="../assets/images/IMG_2593.JPG" alt="ShowImg">
-      <carousel class="project-list">
-        <div class="carousel-cell" style="border-radius: 10px;" *ngFor="let img of images">
-          <img [src]="img">
-          <p>Description of Images</p>
-        </div>
-      </carousel>
-    </div>
-    <div class="biodata">
-      <h1>Hi, my name is <span> Hafiz Abdul Mannan</span><br>
-        I build things for the <span> Web</span>
-      </h1>
-      <div class="bio-descripition">
-        Passion for writing computer programs lead me from Engineering to Web Development.
-        I'm specialized in Angular,
-        JavaScript, HTML/CSS on the frontend.
-      </div>
-    </div>
-    <div class="contact">
-      <div style="position: absolute;">
-      </div>
-    </div>
+  <a href="work" class="btn">My work</a>
+</section>
+<!-- ------------------------------- -->
+<section class="about-me" id="about">
+  <h2 class="section-title section-title-about">
+    Who I am
+  </h2>
+  <p class="section-subtitle section-subtitle-about">
+    Design and Developer based out of NYC
+  </p>
+  <div class="about-me-body">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis perspiciatis tenetur necessitatibus nisi minus
+      ipsam iure. Odio veniam eaque illum ab vitae. Iusto dolore quo vitae aspernatur labore quasi maiores.
+      Natus corrupti eum impedit dicta distinctio dolorum. Ratione deleniti similique quae dolore omnis veritatis in
+      delectus. Sit dolorem nisi impedit quidem similique optio quaerat esse. Pariatur itaque incidunt maiores sit?
+      Sunt amet nulla sint hic laborum fugiat numquam. Excepturi, dolores sequi. Itaque doloribus voluptate officiis
+      veritatis eius voluptates rerum illum consequuntur dolores, dolorum similique aliquam quisquam voluptatem voluptas
+      iure at?
+      Ducimus accusantium explicabo autem nemo asperiores nam nobis veniam, molestias doloribus distinctio totam,
+      inventore qui quibusdam sequi hic quos sed, consequatur rerum facere aspernatur ipsum aliquam esse labore tempora!
+      Quis?</p>
   </div>
-  <div style="position: absolute; right: 10%; bottom: 0%; border-left: 2px solid black; padding: 2% ;">
-    <p>Willing to hire?</p>
-    <button>Resume</button>
-    <button>Contact</button>
+  <img src="../assets/images/1653150952853.jpg" alt="" class="about-me-img">
+</section>
+<!-- -------------------------------- -->
+<section class="my-work" id="work">
+  <h2 class="section-title section-title-work">
+    My Work
+  </h2>
+  <p class="section-subtitle section-subtitle-work">
+    A selection of my range of work
+  </p>
+  <div class="portfolio">
+    <a href="" class="portfolio-item">
+      <img src="../assets/images/WeatherApp1.jpg" alt="portfolio-img" class="portfolio-img">
+    </a>
+    <a href="" class="portfolio-item">
+      <img src="../assets/images/RecipeBook1.jpg" alt="portfolio-img" class="portfolio-img">
+    </a>
+    <a href="" class="portfolio-item">
+      <img src="../assets/images/FoodMine1.jpg" alt="portfolio-img" class="portfolio-img">
+    </a>
+    <a href="" class="portfolio-item">
+      <img src="../assets/images/depositphotos_1757316-stock-photo-bio-logo.jpg" alt="portfolio-img">
+    </a>
   </div>
-  <div class="style-background3"></div>
-  <div class="style-background4"></div>
-</div>
+</section>
+<!-- ----------------------------- -->
+<footer>
+  <a href="" class="footer-link"> hello@maannan.dev</a>
+  <ul class="social-list">
+    <li class="social-list-item">
+      <a href="a" class="social-list-link">a</a>
+      <a href="b" class="social-list-link">b</a>
+      <a href="c" class="social-list-link">c</a>
+      <a href="a" class="social-list-link">d</a>
+    </li>
+  </ul>
+</footer>
