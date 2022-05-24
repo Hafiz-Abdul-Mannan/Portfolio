@@ -2,17 +2,16 @@
   <div class="logo">
     <img src="" alt="">
   </div>
-  <button class="nav-toggle" aria-label="toggle-navigation">
-    <span class="hamburger">
-
+  <button class="nav-toggle" (click)="toggle()" aria-label="toggle-navigation">
+    <span class="hamburger" [ngClass]="{'hamburgerColor': showcontent}">
     </span>
   </button>
-  <nav class="nav">
+  <nav class="nav" *ngIf="showcontent">
     <ul class="nav-list">
-      <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-      <li class="nav-item"><a href="#services" class="nav-link">My Services</a></li>
-      <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
-      <li class="nav-item"><a href="#work" class="nav-link">My Work</a></li>
+      <li class="nav-item" (click)="toggle()"><a href="#home" class="nav-link">Home</a></li>
+      <li class="nav-item" (click)="toggle()"><a href="#services" class="nav-link">My Services</a></li>
+      <li class="nav-item" (click)="toggle()"><a href="#about" class="nav-link">About me</a></li>
+      <li class="nav-item" (click)="toggle()"><a href="#work" class="nav-link">My Work</a></li>
     </ul>
   </nav>
 </header>
@@ -90,28 +89,30 @@
   </p>
   <div class="portfolio">
     <a href="" class="portfolio-item">
-      <img src="../assets/images/WeatherApp1.jpg" alt="portfolio-img" class="portfolio-img">
+      <img src="../assets/images/WeatherApp1.jpg" class="portfolio-img">
     </a>
     <a href="" class="portfolio-item">
-      <img src="../assets/images/RecipeBook1.jpg" alt="portfolio-img" class="portfolio-img">
+      <img src="../assets/images/RecipeBook1.jpg" class="portfolio-img">
     </a>
     <a href="" class="portfolio-item">
-      <img src="../assets/images/FoodMine1.jpg" alt="portfolio-img" class="portfolio-img">
+      <img src="../assets/images/FoodMine1.jpg" class="portfolio-img">
     </a>
     <a href="" class="portfolio-item">
-      <img src="../assets/images/depositphotos_1757316-stock-photo-bio-logo.jpg" alt="portfolio-img">
+      <img src="../assets/images/depositphotos_1757316-stock-photo-bio-logo.jpg" class="portfolio-img">
     </a>
   </div>
 </section>
 <!-- ----------------------------- -->
 <footer>
   <a href="" class="footer-link"> hello@maannan.dev</a>
-  <ul class="social-list">
+  <ul class="social">
     <li class="social-list-item">
-      <a href="a" class="social-list-link">a</a>
-      <a href="b" class="social-list-link">b</a>
-      <a href="c" class="social-list-link">c</a>
-      <a href="a" class="social-list-link">d</a>
+      <a href="a" class="social-list-link">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </li>
+    <li class="social-list-item">
+      <a href="a" class="social-list-link"><i class="fa-brands fa-linkedin"></i></a>
     </li>
   </ul>
 </footer>

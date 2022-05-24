@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-
 
 @Component({
   selector: 'app-root',
@@ -9,5 +7,11 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class AppComponent {
   title = 'Mannan Portfolio';
+  showcontent = false;
   images: string[] = ['../assets/images/WeatherApp.jpg', '../assets/images/RecipeBook.jpg', '../assets/images/FoodMine.jpg'];
+  toggle() {
+    this.showcontent = !this.showcontent;
+  }
+  getColor() { return this.showcontent === false ? '#303030' : '#16e0bd'; }
+
 }
